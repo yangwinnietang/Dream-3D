@@ -1,0 +1,28 @@
+/* CSS重置和全局样式 */
+* { margin: 0; padding: 0; box-sizing: border-box; } /* 全局重置 */
+html, body { height: 100%; overflow-x: hidden; } /* 防止横向滚动 */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #000; color: #fff; } /* 中文友好字体 */
+
+/* 颜色变量定义 */
+:root {
+  --primary-color-1: #5227FF; /* 主色调1 */
+  --primary-color-2: #FF9FFC; /* 主色调2 */
+  --primary-color-3: #B19EEF; /* 主色调3 */
+  --bg-color: #000000; /* 背景色 */
+  --text-color: #ffffff; /* 文字色 */
+  --text-secondary: rgba(255, 255, 255, 0.8); /* 次要文字色 */
+}
+
+/* 响应式断点 */
+@media (max-width: 768px) { .mobile-hidden { display: none; } } /* 移动端隐藏 */
+@media (min-width: 769px) and (max-width: 1024px) { .tablet-only { display: block; } } /* 平板显示 */
+@media (min-width: 1025px) { .desktop-only { display: block; } } /* 桌面显示 */
+
+/* 标题字体 */
+h1, h2, h3 { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 700; } /* 现代无衬线字体 */
+
+/* 动画性能优化 */
+.will-change { will-change: transform, opacity; } /* GPU加速 */
+.gpu-layer { transform: translateZ(0); } /* 强制GPU层 */
+
+#root { width: 100%; height: 100vh; position: relative; } /* 根容器 */

@@ -1,0 +1,22 @@
+/* 组件样式模块 */
+.container { width: 100%; height: 100vh; position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; } /* 主容器 */
+
+.backgroundLayer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; } /* 背景层 */
+
+.contentLayer { position: relative; z-index: 2; text-align: center; padding: 2rem; } /* 内容层 */
+
+.title { font-size: clamp(3rem, 8vw, 8rem); font-weight: 700; margin-bottom: 2rem; color: #ffffff; } /* 标题样式 */
+
+.slogan { font-size: clamp(1.8rem, 4vw, 3rem); color: var(--text-secondary); max-width: 800px; line-height: 1.6; margin-bottom: 1.5rem; } /* 宣传语样式 */
+
+.welcome { font-size: clamp(0.9rem, 2vw, 1.2rem); color: var(--text-secondary); opacity: 0.8; } /* 欢迎文字样式 */
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .contentLayer { padding: 1rem; } /* 移动端内边距 */
+  .title { margin-bottom: 1.5rem; } /* 移动端标题间距 */
+}
+
+@media (min-width: 1200px) {
+  .contentLayer { padding: 3rem; } /* 桌面端内边距 */
+}
