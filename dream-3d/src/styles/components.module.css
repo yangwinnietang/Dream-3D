@@ -11,6 +11,8 @@
 
 .welcome { font-size: clamp(0.9rem, 2vw, 1.2rem); color: var(--text-secondary); opacity: 0.8; } /* 欢迎文字样式 */
 
+.topTitle { position: absolute; top: 2rem; left: 50%; transform: translateX(-50%); font-size: clamp(3rem, 8vw, 8rem); font-weight: 700; color: #ffffff; text-align: center; z-index: 3; white-space: nowrap; } /* 顶部标题样式 */
+
 /* 响应式布局 */
 @media (max-width: 768px) {
   .contentLayer { padding: 1rem; } /* 移动端内边距 */
