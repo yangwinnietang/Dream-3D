@@ -23,10 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Build output
-build/
-dist/
-
 # Environment variables
 .env
 .env.local
@@ -34,5 +30,54 @@ dist/
 .env.test.local
 .env.production.local
 
-# Vite cache
-.vite/
+# Build files
+/build
+/out
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
